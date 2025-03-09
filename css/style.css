@@ -148,16 +148,18 @@
   padding: 124px 0 10px;
 }
 
+.summary .limit {
+  max-width: 960px;
+  margin: 0 228px;
+  padding: 0 10px;
+}
 .summary_detail {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .summary_table {
   width: 100%;
   text-align: left;
-}
-
-table {
   border-collapse: collapse;
 }
 
@@ -165,7 +167,7 @@ table {
   font-size: 21px;
   font-weight: 700;
   border-bottom: 1px dotted #C4C4C4;
-  padding: 20px 0 20px 4px;
+  padding: 18px 2px;
 }
 
 .summary_table_column_sp {
@@ -174,18 +176,59 @@ table {
 
 .summary_table_column {
   vertical-align: top;
-  width: 190px;
+  width: 180px;
+  padding-right: 0;
+}
+
+.summary_table_column_pc {
+  font-size: 21px;
+  padding: 18px 3px;
 }
 
 .summary_table_column span {
-  padding: 10px 20px;
+  padding: 10px 8px;
   border: 2px solid #FDD35C;
   border-radius: 100px;
   display: block;
   color: #FDD35C;
   text-align: center;
-  font-size: 1.2rem;
-  margin: 15px 15px;
+  font-size: 1.3rem;
+  margin: 15px 5px;
+}
+
+.summary_table .table_column2 {
+  padding: 50px 5px;
+}
+
+.column2 {
+  padding: 0 5px;
+  font-size: 22px;
+}
+
+.summary_table_column.column3 {
+  padding: 12px 0px;
+  font-size: 22px;
+}
+
+.summary_table .table_column3 {
+  padding: 40px 7px;
+  font-size: 22px;
+}
+
+.summary_table_column.column4 {
+  padding: 18px 0px;
+  font-size: 22px;
+}
+
+.summary_table .table_column4 {
+  padding: 45px 7px;
+  font-size: 22px;
+  letter-spacing: -0.05rem;
+}
+
+.summary_table_column.column5 {
+  padding: 18px 0px;
+  font-size: 22px;
 }
 
 .summary_table_access {
@@ -194,12 +237,14 @@ table {
 
 .summary_table_access .station {
   width: 50%;
-  margin: 0 30px;
+  margin: 24px 0 24px 10px;
 }
 
 .summary_table_access .station ul {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
+  margin: 7px 0 7px 13px;
+  letter-spacing: 0.04rem;
 }
 
 .summary_table_access .station ul li {
@@ -318,6 +363,7 @@ table {
 
 .pickup_list {
   margin-top: 20px;
+  width: 100%;
 }
 
 .pickup_list_box {
@@ -325,12 +371,13 @@ table {
   margin: 36px 0 -12px;
   text-align: left;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .pickup_list_image {
   width: 325px;
   text-align: center;
-  padding: 0 30px;
+  /* padding: 0 30px 0 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -340,29 +387,104 @@ table {
   max-width: 100%;
 }
 
-.pickup_list_detail {
-  width: 900px;
+.pickup_list_image.image1 {
+  padding: 0 37px;
+}
+
+.pickup_list_detail.image1 {
+  padding-left: 33px;
+  padding-top: 3px;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+}
+
+.pickup_list_image.image2 {
+  padding: 23px 0;
+  width: 288px;
+}
+
+.pickup_list_detail.image2 {
+  padding-left: 27px;
+  padding-top: 8px;
+  font-size: 14px;
+  letter-spacing: 0.07rem;
+}
+
+.pickup_list_box.image3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.pickup_list_image.image3 {
+  padding: 17px 0 0;
+  width: 288px;
+}
+
+.pickup_list_detail.image3 {
+  padding-left: 14px;
+  padding-top: 20px;
+  font-size: 14px;
+  letter-spacing: 0.12rem;
+}
+
+.pickup_list_box.image4 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.pickup_list_image.image4 {
+  padding: 15px 5px;
+  width: 288px;
+}
+
+.pickup_list_detail.image4 {
+  padding-left: 36px;
+  padding-top: 6px;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+}
+
+.pickup_list_detail.image4 span {
+  font-size: 13px;
+  letter-spacing: 0.04rem;
+}
+
+.pickup_list_box.image5 {
+  margin: 16px 5px;
+  font-size: 16px;
+}
+
+.pickup_list_image.image5 {
+  padding: 15px 0px;
+  width: 288px;
+}
+
+.pickup_list_detail.image5 {
+  padding-left: 23px;
+  padding-top: 11px;
+  font-size: 14px;
+  letter-spacing: 0.06rem;
 }
 
 /* 出展企業一覧 */
 .exhibitor {
-  background-image: url(../img/exhibitor.svg);
+  background-image: url(../img/exhibitor2.svg);
   text-align: center;
-  /* background-position: top; */
+  background-position: center;
   background-size: 100%;
-  background-repeat: space;
-  padding: 52px 0 65px;
+  background-repeat: no-repeat;
   width: 100%;
+  padding: 5px 0 70px;
 }
 
 .exhibitor_list {
-  margin-top: 85px;
+  margin-top: 88px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  line-height: 2.2;
+  line-height: 2.1;
   text-align: left;
-  width: 888px;
+  width: 905px;
 }
 
 .exhibitor .subtitle::before,
@@ -382,11 +504,11 @@ table {
 .exhibitor_list_name {
   font-size: 19px;
   font-weight: 500;
-
+  letter-spacing: 0.07rem;
 }
 
 .exhibitor_detail {
-  margin-top: 15px;
+  padding-top: 28px;
   text-align: right;
   font-size: 20px;
 }
@@ -398,6 +520,7 @@ table {
   background-size: cover;
   text-align: center;
   padding: 86px 0 50px;
+  position: relative;
 }
 
 .schedule .title {
@@ -416,17 +539,60 @@ table {
   width: 35px; /* 横線の長さ */
 }
 
+
+/* Read more ボタン実装 */
 .schedule_wrap {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
   margin: 42px 0 130px;
+  position: relative;
+  max-height: 900px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: max-height 1s;
 }
 
 .readMore {
   display: none;
 }
+
+.readMore input {
+  display: none;
+}
+
+.readMore_btn {
+  border: 1px solid #FFF;
+  color: #FFF;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-style: italic;
+}
+
+.readMore:has(:checked) .schedule_wrap {
+  max-height: 1400px;
+}
+
+.readMore .schedule_wrap::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.readMore:has(:checked) .schedule_wrap::after {
+  content: none;
+}
+
+.readMore:has(:checked) label {
+  display: none;
+}
+
+/* Read more ボタン実装 */
+
 
 .schedule_wrap_card {
   width: 30%;
@@ -598,12 +764,18 @@ table {
   text-align: center;
   position: fixed;
   display: block;
-  bottom: 50%;
+  top: 50%;
   right: 0;
-  padding: 10px 0px 10px 10px;
+  padding: 10px;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 1100px) {
+  .limit {
+    width: 100%;
+    padding: 0 15px;
+  }
+
   .contents_wrap {
     width: 100%;
   }
@@ -630,23 +802,415 @@ table {
     line-height: 0;
   }
 
-  .event_img {
-    width: 310px;
-  }
+  /* contents部分  */
+.contents {
+  height: auto;
+}
 
-  .exhibitor {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding: 52px 0 65px;
-    width: 100%;
-  }
+.title {
+  font-size: 40px;
+}
 
-  .exhibitor_list {
-    margin-top: 85px;
-    line-height: 1.8;
-    text-align: left;
-    width: 100%;
-  }
+.subtitle {
+  font-size: 14px;
+}
+
+.summary {
+  padding: 124px 0 0;
+}
+
+.summary .limit {
+  margin: 0;
+  padding: 0 15px;
+}
+
+.summit_text {
+  font-size: 17px;
+  margin-top: 58px;
+  line-height: 2rem;
+}
+
+.summit_detail {
+  margin: 38px 60px 0;
+  font-size: 16px;
+  line-height: 2rem;
+}
+
+.summary_detail {
+  width: 100%;
+}
+
+.summary_table td {
+  font-size: 21px;
+  padding: 18px 2px;
+}
+
+.summary_table_column {
+  width: 180px;
+  padding-right: 0;
+}
+
+.summary_table_column_pc {
+  font-size: 14px;
+  padding: 18px 3px;
+}
+
+.summary_table_column span {
+  padding: 10px 8px;
+  font-size: 0.8rem;
+  margin: 15px 20px;
+}
+
+.summary_table .table_column2 {
+  padding: 50px 5px;
+}
+
+.column2 {
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.summary_table_column.column3 {
+  padding: 12px 0px;
+  font-size: 14px;
+}
+
+.summary_table .table_column3 {
+  padding: 40px 7px;
+  font-size: 14px;
+}
+
+.summary_table_column.column4 {
+  padding: 18px 0px;
+  font-size: 14px;
+}
+
+.summary_table .table_column4 {
+  padding: 45px 7px;
+  font-size: 14px;
+  letter-spacing: -0.05rem;
+}
+
+.summary_table_column.column5 {
+  padding: 18px 0px;
+  font-size: 14px;
+}
+
+.summary_table_access {
+  display: flex;
+}
+
+.summary_table_access .station {
+  width: 50%;
+  margin: 24px 0 24px 10px;
+}
+
+.summary_table_access .station ul {
+  font-size: 10px;
+  font-weight: 500;
+  margin: 7px 0 7px 13px;
+  letter-spacing: 0.04rem;
+}
+
+.summary_table_access .station ul li {
+  margin-top: 5px;
+}
+
+.summary_table_access .map {
+  width: 50%;
+}
+
+/* イベント内容 */
+.event_contents {
+  padding: 0 auto;
+  margin-top: 0;
+}
+
+.event_contents .limit {
+  width: auto;
+  padding: 0 30px;
+}
+
+.contents_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.exhibitor {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 52px 0 65px;
+  width: 100%;
+}
+
+.exhibitor_list {
+  margin-top: 85px;
+  line-height: 1.8;
+  text-align: left;
+  width: 100%;
+}
+
+/* イベント内容 */
+.event_img {
+  width: 310px;
+}
+
+.exhibitor {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 0 0 65px;
+  width: 100%;
+}
+
+.exhibitor_list {
+  margin-top: 0;
+  line-height: 1.8;
+  text-align: left;
+  width: 100%;
+}
+
+/* ピックアップ */
+.pickup {
+  padding: 41px 0;
+}
+
+.pickup_list {
+  margin: 20px 20px 0;
+  width: 90%;
+}
+
+.pickup_list_box,
+.pickup_list_box.image3,
+.pickup_list_box.image4,
+.pickup_list_box.image5 {
+  display: flex;
+  margin: 36px 0 -12px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.pickup_list_image,
+.pickup_list_image.image2,
+.pickup_list_image.image3,
+.pickup_list_image.image4,
+.pickup_list_image.image5 {
+  width: 45%;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pickup_list_image.image1,
+.pickup_list_image.image3 {
+  width: 45%;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pickup_list_detail.image1,
+.pickup_list_detail.image2,
+.pickup_list_detail.image3,
+.pickup_list_detail.image4,
+.pickup_list_detail.image5 {
+  padding: 0 10px;
+  padding-top: 3px;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+  justify-content: left;
+  width: 70%;
+}
+
+.pickup_list_image img {
+  width: 50%;
+  height: 50%;
+}
+
+.image4-img {
+  width: 20%;
+  height: 30%;
+}
+
+.pickup_list_detail.image4 span {
+  font-size: 8px;
+  letter-spacing: 0.1rem;
+}
+
+/* .pickup_list_image.image1 {
+  padding: 0 37px;
+}
+
+.pickup_list_detail.image1 {
+  padding: 0 10px;
+  padding-top: 3px;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+}
+
+.pickup_list_image.image2 {
+  padding: 23px 0;
+  width: 288px;
+}
+
+.pickup_list_detail.image2 {
+  padding: 0 10px;
+  padding-top: 3px;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+}
+
+.pickup_list_box.image3 {
+  margin: 0;
+  font-size: 10px;
+}
+
+.pickup_list_image.image3 {
+  padding: 17px 0 0;
+  width: 200px;
+}
+
+.pickup_list_image image3 img {
+  width: 240px;
+  height: 50px;
+}
+
+.pickup_list_detail.image3 {
+  padding: 0 10px;
+  padding-top: 3px;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+  width: 80%;
+}
+
+.pickup_list_box.image4 {
+  margin: 10px 0;
+  font-size: 10px;
+}
+
+.pickup_list_image.image4 {
+  padding: 15px 5px;
+  width: 288px;
+}
+
+.pickup_list_detail.image4 {
+  padding: 0 10px;
+  padding-top: 3px;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+}
+
+.pickup_list_detail.image4 span {
+  font-size: 10px;
+  letter-spacing: 0.04rem;
+}
+
+.image4-img {
+  width: 20%;
+  height: 20%;
+}
+
+.pickup_list_box.image5 {
+  margin: 16px 5px;
+  font-size: 10px;
+}
+
+.pickup_list_image.image5 {
+  padding: 15px 0px;
+  width: 288px;
+}
+
+.pickup_list_detail.image5 {
+  padding: 0 10px;
+  padding-top: 3px;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+} */
+
+/* 出展企業一覧 */
+.exhibitor {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 5px 0 70px;
+}
+
+.exhibitor_list {
+  margin-top: 88px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+.exhibitor_list_name {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.exhibitor_detail {
+  padding: 28px 30px 0;
+  text-align: right;
+  font-size: 14px;
+}
+
+  /* タイムスケジュール */
+.schedule {
+  padding: 86px 0 50px;
+}
+
+.schedule_wrap {
+  margin-top: 42px;
+}
+
+.schedule_wrap_card {
+  width: 42%;
+  margin-top: 16px;
+  padding: 0 26px;
+  height: auto;
+}
+
+.schedule_wrap_card_date {
+  background-color: rgba(241, 251, 255, 0.6);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
+.schedule_wrap_card_date .schedule_img {
+  position: absolute;
+  left: -4px;
+  top: 10px;
+}
+
+.schedule_wrap_card_date p {
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  font-weight: 700;
+}
+
+.schedule_wrap_card_contents_images {
+  height: 130px;
+}
+
+.schedule_wrap_card_contents_detail {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  text-align: left;
+}
 
 }
 
@@ -836,7 +1400,7 @@ table {
   /* イベント内容 */
 .event_contents {
   padding: 0 20px 5px;
-  margin-top: 0;
+  margin-top: 165px;
 }
 
 .contents_wrap {
@@ -891,11 +1455,19 @@ table {
 }
 
 /* ピックアップ */
+.pickup_list {
+  margin: 20px 20px 0;
+  width: 80%;
+}
+
 .pickup_list_box {
   font-weight: 500;
 }
 
-
+/* 出展企業 */
+.exhibitor {
+  padding: 30px 0 70px;
+}
 
 
 /* タイムスケジュール */
@@ -950,6 +1522,22 @@ table {
 
 }
 
+@media screen and (max-width: 650px) {
+.exhibitor_list {
+  justify-content: space-around;
+  align-items: flex-start;
+  line-height: 1.8;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.exhibitor_list_name {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+}
+
 @media screen and (max-width: 575px) {
   .contents {
     height: auto;
@@ -967,7 +1555,7 @@ table {
 
   .readMore {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
   }
 
   .readMore_btn {
@@ -976,15 +1564,518 @@ table {
     cursor: pointer;
     padding: 5px 10px;
     font-style: italic;
-
 }
 
   .exhibitor_list_name {
-    font-size: 14px;
+    font-size: 10px;
+  }
+
+  .faq_list_box {
+    margin: 10px 50px;
+    font-size: 13px;
   }
 }
 
 @media screen and (max-width: 400px) {
+.main_kv {
+  background-image: url(../img/background_sp.png);
+  max-width: 400px;
+  height: 466px;
+  padding: 0;
+}
+
+.kv_logo {
+  padding: 14px 12px;
+}
+
+.kv_logo img {
+  width: 76px;
+  cursor: pointer;
+}
+
+.kv_contents {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.kv_text {
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+.kv_title {
+  margin-top: 25px;
+}
+
+.kv_title img {
+  width: 81%;
+}
+
+.kv_date {
+  margin: 0 auto;
+  margin-top: 12px;
+  font-size: 1.2rem;
+  padding: 0px 20px;
+  letter-spacing: -0.02rem;
+}
+
+.kv_date span {
+  font-size: 1.0rem;
+}
+
+.kv_area {
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+.kv_apply {
+  margin-top: 38px;
+}
+
+
+
+/* contents部分  */
+.contents {
+  background-image: url(../img/sp_contents.svg);
+  height: 356px;
+  background-position: center;
+  background-size: cover;
+}
+
+.summit {
+  text-align: center;
+  padding: 25px 0 28px;
+}
+
+.limit {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.title {
+  font-size: 22px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  display: inline-block;
+  position: relative;
+  margin-top: 4px;
+  font-size: 14px;
+  align-items: center; /* 横線を上下中央 */
+  display: flex; /* 文字と横線を横並び */
+  justify-content: center; /* 文字を中央寄せ */
+}
+
+.subtitle::before,
+.subtitle::after {
+  background-color: #444545; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 18px; /* 横線の長さ */
+}
+.subtitle::before {
+  margin-right: 15px; /* 文字との余白 */
+}
+.subtitle::after {
+  margin-left: 20px; /* 文字との余白 */
+}
+
+.summit_text {
+  display: none;
+}
+
+.summit_detail {
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 2.36rem;
+  padding: 0;
+  margin: 20px 50px 0;
+  letter-spacing: 0.05rem;
+}
+
+.summary {
+  padding: 0 0 10px;
+}
+
+.summary .limit {
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+}
+.summary_detail {
+  margin-top: 7px;
+}
+
+.summary_table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.summary_table td {
+  font-size: 21px;
+  font-weight: 700;
+  border-bottom: 1px dotted #C4C4C4;
+  padding: 12px 2px;
+  line-height: 1.6rem;
+}
+
+.summary_table_column_sp {
+  display: block;
+  font-size: 12px;
+  padding: 0;
+  margin: 0 auto;
+  letter-spacing: 0.03rem;
+  line-height: 1.8rem;
+}
+
+.summary_table_column {
+  vertical-align: top;
+  width: 38%;
+  padding-right: 0;
+  padding: 7px 2px 7px;
+  line-height: 1.2rem;
+}
+
+.summary_table_column_pc {
+  display: none;
+}
+
+.summary_table_column span {
+  padding: 0 5px;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.summary_table .table_column2 {
+  padding: 5px 0;
+}
+
+.table_column2 .summary_table_column_sp {
+  padding: 5px 0;
+  margin-left: 0;
+  font-size: 13px;
+  letter-spacing: 0.03rem;
+}
+
+.column2 {
+  padding: 0 5px;
+  font-size: 22px;
+}
+
+.summary_table_column.column3 {
+  padding: 12px 0px;
+  font-size: 22px;
+}
+
+.summary_table .table_column3 {
+  padding: 5px 0;
+  font-size: 13px;
+}
+
+.summary_table_column.column4 {
+  padding: 5px 0;
+  font-size: 13px;
+}
+
+.summary_table .table_column4 {
+  padding: 5px 0;
+  font-size: 13px;
+  letter-spacing: -0.05rem;
+}
+
+.summary_table_column.column5 {
+  padding: 5px 0;
+  font-size: 13px;
+}
+
+.summary_table_access {
+  display: flex;
+}
+
+.summary_table_access .station {
+  width: 50%;
+  margin: 24px 0 24px 10px;
+}
+
+.summary_table_access .station ul {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 7px 0 7px 13px;
+  letter-spacing: 0.04rem;
+}
+
+.summary_table_access .station ul li {
+  list-style-type: disc;
+  color: #FDD35C;
+  margin-top: 5px;
+}
+
+.summary_table_access .station ul li span {
+  color: #444545;
+}
+
+.summary_table_access .map {
+  width: 50%;
+}
+
+.summary_table_access .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.map_sp {
+  display: none;
+}
+
+/* イベント内容 */
+.event_contents {
+  text-align: center;
+  background-color: #FFF6DE;
+  padding: 75px 0;
+  margin-top: 1200px;
+}
+
+.contents_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.event_contents .title {
+  color: #FDD35C;
+}
+
+.contents_box {
+  width: 45%;
+  border: 3px solid #FDD35C;
+  border-radius: 10px;
+  margin-top: 54px;
+}
+
+.contents_box_title {
+  background-color: #FDD35C;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  padding: 9px;
+}
+
+.wrap_detail {
+  background-color: #FFF;
+}
+
+.contents_box_detail {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 15px 30px 0;
+}
+
+.contents_box_detail p {
+  font-size: 14px;
+  font-weight: 500;
+  width: 360px;
+}
+
+.contents_box_detail img {
+  width: 210px;
+  height: 27px;
+}
+
+.contents_box_text {
+  color: #FDD35C;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.contents_box_text span {
+  color: #FDD35C;
+  font-size: 38px;
+  font-style: italic;
+  margin-right: 5px;
+  line-height: 1.9rem;
+}
+
+.event_img {
+  width: 340px;
+  margin-bottom: 16px;
+}
+
+.apply {
+  margin-top: 60px;
+}
+
+
+/* ピックアップ */
+.pickup {
+  padding: 41px 0;
+  text-align: center;
+  border-left: 50px solid #FDD35C;
+  border-right: 50px solid #FDD35C;
+}
+
+.pickup .title {
+  color: #FDD35C;
+}
+
+.pickup_list {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.pickup_list_box {
+  display: flex;
+  margin: 36px 0 -12px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.pickup_list_image {
+  width: 325px;
+  text-align: center;
+  /* padding: 0 30px 0 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pickup_list_image img {
+  max-width: 100%;
+}
+
+.pickup_list_image.image1 {
+  padding: 0 37px;
+}
+
+.pickup_list_detail.image1 {
+  padding-left: 33px;
+  padding-top: 3px;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+}
+
+.pickup_list_image.image2 {
+  padding: 23px 0;
+  width: 288px;
+}
+
+.pickup_list_detail.image2 {
+  padding-left: 27px;
+  padding-top: 8px;
+  font-size: 14px;
+  letter-spacing: 0.07rem;
+}
+
+.pickup_list_box.image3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.pickup_list_image.image3 {
+  padding: 17px 0 0;
+  width: 288px;
+}
+
+.pickup_list_detail.image3 {
+  padding-left: 14px;
+  padding-top: 20px;
+  font-size: 14px;
+  letter-spacing: 0.12rem;
+}
+
+.pickup_list_box.image4 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.pickup_list_image.image4 {
+  padding: 15px 5px;
+  width: 288px;
+}
+
+.pickup_list_detail.image4 {
+  padding-left: 36px;
+  padding-top: 6px;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+}
+
+.pickup_list_detail.image4 span {
+  font-size: 13px;
+  letter-spacing: 0.04rem;
+}
+
+.pickup_list_box.image5 {
+  margin: 16px 5px;
+  font-size: 16px;
+}
+
+.pickup_list_image.image5 {
+  padding: 15px 0px;
+  width: 288px;
+}
+
+.pickup_list_detail.image5 {
+  padding-left: 23px;
+  padding-top: 11px;
+  font-size: 14px;
+  letter-spacing: 0.06rem;
+}
+
+/* 出展企業一覧 */
+.exhibitor {
+  background-image: url(../img/exhibitor2.svg);
+  text-align: center;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 5px 0 70px;
+}
+
+.exhibitor_list {
+  margin-top: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 2.1;
+  text-align: left;
+  width: 905px;
+}
+
+.exhibitor .subtitle::before,
+.exhibitor .subtitle::after {
+  background-color: #444545; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 35px; /* 横線の長さ */
+}
+.exhibitor .subtitle::before {
+  margin-right: 50px; /* 文字との余白 */
+}
+.exhibitor .subtitle::after {
+  margin-left: 60px; /* 文字との余白 */
+}
+
+.exhibitor_list_name {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+}
+
+.exhibitor_detail {
+  padding-top: 28px;
+  text-align: right;
+  font-size: 20px;
+}
 
 .schedule {
   padding: 18px 0 50px;
@@ -995,7 +2086,7 @@ table {
 }
 
 .schedule_wrap_card {
-  width: 42%;
+  width: 100%;
   margin-top: 16px;
   padding: 0 26px;
   height: auto;
@@ -1061,7 +2152,7 @@ table {
   margin: 10px 50px;
   font-size: 13px;
 }
-.faq_list_box.sp {
+/* .faq_list_box.sp {
   display: none;
-}
+} */
 }

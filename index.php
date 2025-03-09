@@ -31,7 +31,7 @@
     <div class="summary">
       <div class="limit">
         <div class="title">Event Summary</div>
-        <div class="subtitle">イベント開催概要</div>
+        <div class="subtitle"> イベント開催概要 </div>
         <div class="summary_detail">
           <table class="summary_table">
             <tbody>
@@ -45,27 +45,26 @@
                 <td class="summary_table_column">
                   <span>会場</span>
                 </td>
-                <td><span class="summary_table_column_pc">東京国際フォーラム ホールE2</span><span class="summary_table_column_sp">東京国際ホール</span></td>
+                <td class="table_column2"><span class="summary_table_column_pc column2">東京国際フォーラム ホールE2</span><span class="summary_table_column_sp">東京国際ホール</span></td>
               </tr>
               <tr>
-                <td class="summary_table_column">
+                <td class="summary_table_column column3">
                   <span>イベント内容</span>
                 </td>
-                <td>企業ブース出展：60ブース<br class="sp">ビジネス系セミナー：12枠</td>
+                <td class="table_column3">企業ブース出展：60ブース<br class="sp">ビジネス系セミナー：8枠</td>
               </tr>
               <tr>
-                <td class="summary_table_column">
+                <td class="summary_table_column column4">
                   <span>対象者</span>
                 </td>
-                <td>経営者 / フリーランス / <br class="summary_table_column_sp">独立志望の会社員</td>
+                <td class="table_column4">経営者 / フリーランス / <br class="summary_table_column_sp">独立志望の会社員</td>
               </tr>
               <tr>
-                <td class="summary_table_column">
+                <td class="summary_table_column column5">
                   <span>アクセス</span>
                 </td>
                 <td class="summary_table_access">
-                  <div class="station">
-                    【最寄駅】
+                  <div class="station">【最寄駅】
                     <ul>
                       <li><span>JR</span></li>
                       有楽町駅より徒歩1分<br>
@@ -79,14 +78,14 @@
                     </ul>
                   </div>
                   <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.04207323855!2d139.763753!3d35.676743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfabc68fde1%3A0xc4ca6a002ded263d!2z5p2x5Lqs5Zu96Zqb44OV44Kp44O844Op44Og!5e0!3m2!1sja!2sus!4v1741046124393!5m2!1sja!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.04207323855!2d139.763753!3d35.676743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfabc68fde1%3A0xc4ca6a002ded263d!2z5p2x5Lqs5Zu96Zqb44OV44Kp44O844Op44Og!5e0!3m2!1sja!2sus!4v1741046124393!5m2!1sja!2sus" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
           <div class="map_sp">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.04207323855!2d139.763753!3d35.676743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfabc68fde1%3A0xc4ca6a002ded263d!2z5p2x5Lqs5Zu96Zqb44OV44Kp44O844Op44Og!5e0!3m2!1sja!2sus!4v1741046124393!5m2!1sja!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.04207323855!2d139.763753!3d35.676743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfabc68fde1%3A0xc4ca6a002ded263d!2z5p2x5Lqs5Zu96Zqb44OV44Kp44O844Op44Og!5e0!3m2!1sja!2sus!4v1741046124393!5m2!1sja!2sus" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -97,7 +96,7 @@
   <div class="event_contents">
     <div class="limit">
       <div class="title">Contents</div>
-      <div class="subtitle">イベント内容</div>
+      <div class="subtitle"> イベント内容 </div>
       <!-- 二つの枠エリア -->
       <div class="contents_wrap">
         <div class="contents_box">
@@ -130,33 +129,33 @@
       <div class="subtitle">注目の企業</div>
       <div class="pickup_list">
         <div class="pickup_list_box">
-          <div class="pickup_list_image"><a href="#" target="_blank"><img src="./img/pickup_list1.png" alt="会社ロゴ" width="110" height="30"></a></div>
-          <div class="pickup_list_detail">
+          <div class="pickup_list_image image1"><a href="#" target="_blank"><img src="./img/pickup_list1.png" alt="会社ロゴ" width="110" height="30"></a></div>
+          <div class="pickup_list_detail image1">
           オープラン株式会社は「ITサービス」を軸に「人」と「グローバル」に向き合い日本を代表する企業になるべく2015年に産声をあげたベンチャー企業です。<br>https://oplan.co.jp/
           </div>
         </div>
         <div class="pickup_list_box">
-          <div class="pickup_list_image"><a href="#" target="_blank"><img src="./img/pickup_list2.png" alt="会社ロゴ" width="223" height="19"></a></div>
-          <div class="pickup_list_detail">
+          <div class="pickup_list_image image2"><a href="#" target="_blank"><img src="./img/pickup_list2.png" alt="会社ロゴ" width="225" height="20"></a></div>
+          <div class="pickup_list_detail image2">
           ITフリーランスの仕事探しなら【PE-BANK】へ。Web・SE系を中心に毎月1,000件以上のご紹介。
           </div>
         </div>
-        <div class="pickup_list_box">
-          <div class="pickup_list_image"><a href="#" target="_blank"><img src="./img/pickup_list3.png" alt="会社ロゴ" width="267" height="30"></a></div>
-          <div class="pickup_list_detail">
+        <div class="pickup_list_box image3">
+          <div class="pickup_list_image image3"><a href="#" target="_blank"><img src="./img/pickup_list3.png" alt="会社ロゴ" width="250" height="30"></a></div>
+          <div class="pickup_list_detail image3">
           台湾の「食文化」の導入により、日本の飲食業をクリエイティブに。
           </div>
         </div>
-        <div class="pickup_list_box">
-          <div class="pickup_list_image"><a href="#" target="_blank"><img src="./img/pickup_list4.png" alt="会社ロゴ" width="124" height="57"></a></div>
-          <div class="pickup_list_detail">
-          月額制システム開発チームレンタルSucSak(サクサク)を運営している東京新宿のシステム開発会社です。<br><img src="./img/pickup_list6.png" alt="ミニ会社ロゴ" width="95" height="21">：https://sucsak.com/
+        <div class="pickup_list_box image4">
+          <div class="pickup_list_image image4"><a href="#" target="_blank"><img src="./img/pickup_list4.png" alt="会社ロゴ" width="114" height="47"></a></div>
+          <div class="pickup_list_detail image4">
+          月額制システム開発チームレンタルSucSak(サクサク)を運営している東京新宿のシステム開発会社です。<br><img src="./img/pickup_list6.png" alt="ミニ会社ロゴ" class="image4-img" width="95" height="30"><span>：https://sucsak.com/</span>
           </div>
         </div>
-        <div class="pickup_list_box">
-          <div class="pickup_list_image"><a href="#" target="_blank"><img src="./img/pickup_list5.png" alt="会社ロゴ" width="103" height="42"></a></div>
-          <div class="pickup_list_detail">
-          1000業種以上の圧倒的運用実績！リスティング、Facebook・TwitterなどのSNS広告もおまかせ。
+        <div class="pickup_list_box image5">
+          <div class="pickup_list_image image5"><a href="#" target="_blank"><img src="./img/pickup_list5.png" alt="会社ロゴ" width="103" height="42"></a></div>
+          <div class="pickup_list_detail image5">
+          1000業種以上の圧倒的運用実績！ リスティング、Facebook・TwitterなどのSNS広告もおまかせ。
           </div>
         </div>
       </div>
@@ -216,7 +215,7 @@
             </div>
           </div>
           <div class="readMore">
-            <span class="readMore_btn">Read more</span>
+            <label><input type="checkbox"/><span class="readMore_btn">Read more</span></label>
           </div>
           <div class="schedule_wrap_card">
               <div class="schedule_wrap_card_date">
