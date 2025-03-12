@@ -85,13 +85,12 @@
             </tbody>
           </table>
           <div class="map_sp">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.04207323855!2d139.763753!3d35.676743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfabc68fde1%3A0xc4ca6a002ded263d!2z5p2x5Lqs5Zu96Zqb44OV44Kp44O844Op44Og!5e0!3m2!1sja!2sus!4v1741046124393!5m2!1sja!2sus" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.04207323855!2d139.763753!3d35.676743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfabc68fde1%3A0xc4ca6a002ded263d!2z5p2x5Lqs5Zu96Zqb44OV44Kp44O844Op44Og!5e0!3m2!1sja!2sus!4v1741046124393!5m2!1sja!2sus" width="360" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <!-- イベント内容 -->
   <div class="event_contents">
     <div class="limit">
@@ -214,8 +213,10 @@
               </div>
             </div>
           </div>
+          <!-- 「Read more」ボタン -->
           <div class="readMore">
-            <label><input type="checkbox"/><span class="readMore_btn">Read more</span></label>
+            <label  for="toggle"class="readMore_btn">Read more</label>
+            <input type="checkbox" id="toggle" hidden/>
           </div>
           <div class="schedule_wrap_card">
               <div class="schedule_wrap_card_date">
@@ -255,7 +256,7 @@
                 <img src="./img/TimeVector.svg" alt="時刻表示" class="schedule_img">
                 <p>14:20〜</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="./img/face7.png" alt="顔写真" width="257" height="97"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face7.png" alt="顔写真" width="260" height="110"></div>
                   <div class="schedule_wrap_card_contents_detail">SNSを伸ばした先に見える世界</div>
                 </div>
               </div>
@@ -337,7 +338,7 @@
               </div>
             </div>
 
-            <div class="faq_list_box sp">
+            <div class="faq_list_box">
               <div class="faq_list_box_question">
                 <div class="faq_list_boq_question_top"> Q </div>
                 <div class="faq_list_boq_question_bottom"> 入場にお金はかかりますか？ </div>
@@ -348,7 +349,7 @@
               </div>
             </div>
 
-            <div class="faq_list_box sp">
+            <div class="faq_list_box">
               <div class="faq_list_box_question">
                 <div class="faq_list_boq_question_top"> Q </div>
                 <div class="faq_list_boq_question_bottom"> 出展を希望する企業はどこから問い合わせれば良いですか？ </div>
@@ -371,7 +372,7 @@
         <div class="footer_detail">
           <span>運営会社</span>
           <img src="./img/fv_logo.png" alt="StockSunロゴ" target="_blank">
-          <a href="#" target="_blank">個人情報保護方針</a>
+          <span>個人情報保護方針</span>
         </div>
       </div>
      </div>
