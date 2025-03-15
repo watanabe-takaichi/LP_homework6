@@ -567,7 +567,7 @@
   border: 1px solid #FFF;
   color: #FFF;
   cursor: pointer;
-  padding: 0 14px;
+  padding: 4px 14px;
   font-style: italic;
 }
 
@@ -625,6 +625,37 @@
   max-height:100%;
 }
 
+.schedule_wrap_card_contents_images .face_img1 {
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+  padding-top: 12%;
+}
+
+.schedule_wrap_card_contents_images .face_img2 {
+  width:auto;
+  height:auto;
+  max-width: 100%;
+  max-height: 90%;
+  padding: 10% 0;
+}
+
+.schedule_wrap_card_contents_images .images_last {
+  position: relative;
+}
+
+.schedule_wrap_card_contents_images .face_img3 {
+  width:auto;
+  height:auto;
+  max-width: 60%;
+  max-height: 60%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 .schedule_wrap_card_contents_detail {
   font-size: 20px;
   font-weight: 700;
@@ -658,7 +689,7 @@
   /* padding: 23px 105px 0; */
   padding: 15px 10px;
   margin: 10px 93px;
-  line-height: 2.5rem;
+  line-height: 2.4rem;
   font-size: 18px;
   font-weight: 700;
 }
@@ -718,9 +749,14 @@
   text-align: center;
   background-color: #333333;
   color: #FFF;
-  padding: 20px 0;
-  padding-bottom: 30px;
-  margin: 17px 0;
+  padding-top: 20px;
+  margin-top: 23px;
+}
+
+.footer .limit {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer_exhibit {
@@ -744,17 +780,18 @@
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  padding-top: 15px;
+  padding: 15px 0 39px;
 }
 
 .footer_detail span {
-  padding: 0 13px 0 10px;
-  margin-top: 20px;
+  padding: 0 10px 0 6px;
+  margin-top: 30px;
   display: block;
 }
 
 .footer_detail img {
-  width: 25%;
+  width: 18%;
+  margin-right: 35px;
 }
 
 .footer_detail a {
@@ -1044,96 +1081,6 @@
   letter-spacing: 0.1rem;
 }
 
-/* .pickup_list_image.image1 {
-  padding: 0 37px;
-}
-
-.pickup_list_detail.image1 {
-  padding: 0 10px;
-  padding-top: 3px;
-  font-size: 10px;
-  letter-spacing: 0.1rem;
-}
-
-.pickup_list_image.image2 {
-  padding: 23px 0;
-  width: 288px;
-}
-
-.pickup_list_detail.image2 {
-  padding: 0 10px;
-  padding-top: 3px;
-  font-size: 10px;
-  letter-spacing: 0.1rem;
-}
-
-.pickup_list_box.image3 {
-  margin: 0;
-  font-size: 10px;
-}
-
-.pickup_list_image.image3 {
-  padding: 17px 0 0;
-  width: 200px;
-}
-
-.pickup_list_image image3 img {
-  width: 240px;
-  height: 50px;
-}
-
-.pickup_list_detail.image3 {
-  padding: 0 10px;
-  padding-top: 3px;
-  font-size: 10px;
-  letter-spacing: 0.1rem;
-  width: 80%;
-}
-
-.pickup_list_box.image4 {
-  margin: 10px 0;
-  font-size: 10px;
-}
-
-.pickup_list_image.image4 {
-  padding: 15px 5px;
-  width: 288px;
-}
-
-.pickup_list_detail.image4 {
-  padding: 0 10px;
-  padding-top: 3px;
-  font-size: 10px;
-  letter-spacing: 0.1rem;
-}
-
-.pickup_list_detail.image4 span {
-  font-size: 10px;
-  letter-spacing: 0.04rem;
-}
-
-.image4-img {
-  width: 20%;
-  height: 20%;
-}
-
-.pickup_list_box.image5 {
-  margin: 16px 5px;
-  font-size: 10px;
-}
-
-.pickup_list_image.image5 {
-  padding: 15px 0px;
-  width: 288px;
-}
-
-.pickup_list_detail.image5 {
-  padding: 0 10px;
-  padding-top: 3px;
-  font-size: 10px;
-  letter-spacing: 0.1rem;
-} */
-
 /* 出展企業一覧 */
 .exhibitor {
   background-position: center;
@@ -1209,6 +1156,12 @@
   display: flex;
   align-items: center;
   height: 80px;
+}
+
+.footer .limit {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 }
@@ -1519,6 +1472,12 @@
   text-align: left;
 }
 
+.footer .limit {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 }
 
 @media screen and (max-width: 650px) {
@@ -1535,6 +1494,13 @@
   font-weight: 500;
   letter-spacing: 0.05rem;
 }
+
+.footer .limit {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 }
 
 @media screen and (max-width: 575px) {
@@ -1615,9 +1581,19 @@
     margin: 15px auto;
   }
 
+  /* .faq_list {
+    padding-bottom: 40px;
+} */
+
   .faq_list_box {
     margin: 10px 50px;
     font-size: 13px;
+  }
+
+  .footer .limit {
+    max-width: 573px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -1747,8 +1723,8 @@
 }
 
 .summary .limit {
-  max-width: 400px;
-  margin: 0;
+  max-width: 350px;
+  margin: 0 auto;
   padding: 0;
 }
 .summary_detail {
@@ -1759,14 +1735,14 @@
   width: 100%;
   text-align: left;
   border-collapse: collapse;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 
 .summary_table td {
   font-size: 21px;
   font-weight: 700;
   border-bottom: 1px dotted #C4C4C4;
-  padding: 11px 0;
+  padding: 7px 0;
   line-height: 1.6rem;
 }
 
@@ -1774,14 +1750,14 @@
   display: block;
   font-size: 12px;
   padding: 0;
-  margin: 0 auto;
-  letter-spacing: 0.03rem;
-  line-height: 1.8rem;
+  margin: 0;
+  letter-spacing: 0.035rem;
+  line-height: 1.9rem;
 }
 
 .summary_table_column {
   vertical-align: top;
-  width: 38%;
+  width: 37%;
   padding-right: 0;
   padding: 7px 2px 7px;
   line-height: 1.2rem;
@@ -1792,10 +1768,10 @@
 }
 
 .summary_table_column span {
-  padding: 0 5px;
-  font-size: 0.8rem;
-  margin: 0 auto;
-  width: 60%;
+  padding: 0 7px;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  width: 70%;
 }
 
 .summary_table .table_column2 {
@@ -1815,7 +1791,7 @@
 }
 
 .summary_table_column.column3 {
-  padding: 12px 0px;
+  padding: 2px 1px;
   font-size: 22px;
 }
 
@@ -1826,18 +1802,19 @@
 }
 
 .summary_table_column.column4 {
-  padding: 5px 0;
+  padding: 6px 2px;
   font-size: 13px;
 }
 
 .summary_table .table_column4 {
-  padding: 13px 0;
+  padding: 13px 0 3px;
   font-size: 13px;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.8rem;
 }
 
 .summary_table_column.column5 {
-  padding: 5px 0;
+  padding: 6px 3px;
   font-size: 13px;
 }
 
@@ -1848,8 +1825,9 @@
 
 .summary_table_access .station {
   width: 100%;
-  margin: 0;
+  margin: 5px 0;
   font-size: 14px;
+  text-align: left;
 }
 
 .summary_table_access .station ul {
@@ -1857,12 +1835,17 @@
   font-weight: 500;
   margin: 0;
   letter-spacing: 0.01rem;
+  line-height: 1.15rem;
 }
 
 .summary_table_access .station ul li {
   list-style-type: disc;
   color: #FDD35C;
-  margin: 2px 0 5px;
+  margin: 4px 0 5px;
+}
+
+.summary_table_access .station ul li:nth-of-type(2) {
+  margin: 8px 0 2px;
 }
 
 .summary_table_access .map iframe {
@@ -2181,8 +2164,14 @@
 /* フッター */
 .footer {
   padding: 10px 0;
-  padding-bottom: 30px;
+  padding-bottom: 0;
   margin: 3px 0;
+}
+
+.footer .limit {
+  max-width: 297px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer_exhibit {
@@ -2202,17 +2191,18 @@
   justify-content: center;
   align-items: center;
   font-size: 9px;
-  padding-top: 8px;
+  padding: 8px 0 26px;
 }
 
 .footer_detail span {
-  padding: 0 9px 0 3px;
-  margin-top: 14px;
+  padding: 0 4px 0 0;
+  margin-top: 20px;
   display: block;
 }
 
 .footer_detail img {
-  width: 33%;
+  width: 40%;
+  margin-right: 17px;
 }
 
 .footer_detail a {

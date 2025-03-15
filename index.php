@@ -57,7 +57,7 @@
                 <td class="summary_table_column column4">
                   <span>対象者</span>
                 </td>
-                <td class="table_column4">経営者 / フリーランス / <br class="summary_table_column_sp">独立志望の会社員</td>
+                <td class="table_column4">経営者 /フリーランス /<br class="summary_table_column_sp">独立志望の会社員</td>
               </tr>
               <tr>
                 <td class="summary_table_column column5">
@@ -256,7 +256,7 @@
                 <img src="./img/TimeVector.svg" alt="時刻表示" class="schedule_img">
                 <p>14:20〜</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="./img/face7.png" alt="顔写真" width="260" height="110"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face7.png" class="face_img1"  alt="顔写真" width="260" height="110"></div>
                   <div class="schedule_wrap_card_contents_detail">SNSを伸ばした先に見える世界</div>
                 </div>
               </div>
@@ -278,7 +278,7 @@
                 <img src="./img/TimeVector.svg" alt="時刻表示" class="schedule_img">
                 <p>15:40〜</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="./img/face9.png" alt="顔写真" width="242" height="124"></div>
+                  <div class="schedule_wrap_card_contents_images"><img src="./img/face9.png" class="face_img2" alt="顔写真" width="242" height="124"></div>
                   <div class="schedule_wrap_card_contents_detail">エンジニアとして独立し、年収3000万円を超える方法</div>
                 </div>
               </div>
@@ -311,7 +311,7 @@
                 <img src="./img/TimeVector.svg" alt="時刻表示" class="schedule_img">
                 <p>MC</p>
                 <div class="schedule_wrap_card_contents">
-                  <div class="schedule_wrap_card_contents_images"><img src="./img/face12.png" alt="顔写真" width="242" height="124"></div>
+                  <div class="schedule_wrap_card_contents_images images_last"><img src="./img/face12.png" class="face_img3" alt="顔写真" width="242" height="124"></div>
                 </div>
               </div>
           </div>
