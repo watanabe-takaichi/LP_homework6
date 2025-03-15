@@ -2096,6 +2096,20 @@
   padding: 27px 0 0 0;
 }
 
+.subtitle::before,
+.subtitle::after {
+  background-color: #444545; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 23px; /* 横線の長さ */
+}
+.subtitle::before {
+  margin-right: 30px; /* 文字との余白 */
+}
+.subtitle::after {
+  margin-left: 30px; /* 文字との余白 */
+}
+
 .faq_list {
   margin-top: 0;
   padding-top: 10px;
