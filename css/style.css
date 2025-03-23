@@ -614,6 +614,13 @@
   font-weight: 700;
 }
 
+.schedule_wrap_card_date .last_description {
+  position: absolute;
+  left: 25px;
+  top: 12px;
+  font-weight: 700;
+}
+
 .schedule_wrap_card_contents_images {
   height: 130px;
 }
@@ -641,16 +648,17 @@
   padding: 10% 0;
 }
 
-.schedule_wrap_card_contents_images .images_last {
-  position: relative;
+.schedule_wrap_card_contents_images.images_last {
+  height: 155px;
 }
 
 .schedule_wrap_card_contents_images .face_img3 {
   width:auto;
   height:auto;
-  max-width: 60%;
-  max-height: 60%;
+  max-width: 100%;
+  max-height: 70%;
   position: absolute;
+  padding-top: 30px;
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -808,7 +816,7 @@
   transform: translateY(-50%);
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .limit {
     width: 100%;
     padding: 0 15px;
@@ -941,7 +949,7 @@
 
 .summary_table_access .station {
   width: 50%;
-  margin: 24px 0 24px 10px;
+  margin: 24px 0 24px;
 }
 
 .summary_table_access .station ul {
@@ -956,7 +964,7 @@
 }
 
 .summary_table_access .map {
-  width: 50%;
+  width: 47%;
 }
 
 /* イベント内容 */
@@ -1164,6 +1172,21 @@
   padding: 0;
 }
 
+}
+
+
+@media screen and (max-width: 900px) {
+  .schedule_wrap_card_contents_images .face_img3 {
+    width:auto;
+    height:auto;
+    max-width: 90%;
+    max-height: 70%;
+    position: absolute;
+    padding-top: 30px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2049,7 +2072,7 @@
 .schedule_wrap_card_date p {
   position: absolute;
   left: 5px;
-  top: 11px;
+  top: 9px;
   font-weight: 700;
   font-size: 10px;
   letter-spacing: 0.15rem;
@@ -2077,8 +2100,8 @@
   display: flex;
   align-items: center;
   height: 60px;
-  width: 60%;
-  letter-spacing: 0.2rem;
+  width: 65%;
+  letter-spacing: 0.25rem;
   line-height: 1.1rem;
 }
 
@@ -2091,9 +2114,74 @@
   margin: 15px auto;
 }
 
+.schedule_wrap_card_contents_detail.sp1 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  padding: 30px 0 10px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 45%;
+  letter-spacing: 0.25rem;
+  line-height: 1.1rem;
+}
+
+.schedule_wrap_card_contents_detail.sp2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  padding: 30px 0 10px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 55%;
+  letter-spacing: 0.25rem;
+  line-height: 1.1rem;
+}
+
+.schedule_wrap_card_contents_images .face_img1 {
+  width:auto;
+  height:auto;
+  max-width:50%;
+  max-height:100%;
+  padding: 10px 0;
+}
+
+.schedule_wrap_card_contents_images .face_img2 {
+  width:auto;
+  height:auto;
+  max-width: 42%;
+  max-height: 100%;
+  padding: 10px 0;
+}
+
+.schedule_wrap_card_date .last_description {
+  position: absolute;
+  left: 23px;
+  top: 10px;
+  font-weight: 700;
+  width: 5%;
+}
+
+.schedule_wrap_card_contents_images.images_last {
+  height: 100px;
+}
+
+.schedule_wrap_card_contents_images .face_img3 {
+  width:auto;
+  height:auto;
+  max-width: 100%;
+  max-height: 90%;
+  padding-top: 5px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 /* よくある質問 */
 .faq {
-  padding: 27px 0 0 0;
+  padding: 27px 0 50px;
 }
 
 .subtitle::before,
@@ -2179,7 +2267,7 @@
 .footer {
   padding: 10px 0;
   padding-bottom: 0;
-  margin: 3px 0;
+  margin: 0;
 }
 
 .footer .limit {
