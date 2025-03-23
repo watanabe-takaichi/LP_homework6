@@ -1174,12 +1174,9 @@
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 980px) {
   .schedule_wrap_card {
     width: 30%;
-    margin: 8px 0;
-    padding: 0 17px;
-    height: 260px;
   }
 }
 
