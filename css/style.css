@@ -602,7 +602,7 @@
 
 .schedule_wrap_card_date .schedule_img {
   position: absolute;
-  left: -4px;
+  left: -3px;
   top: 10px;
 }
 
@@ -1133,7 +1133,7 @@
 }
 
 .schedule_wrap_card_contents_detail {
-  font-size: 1.2rem;
+  font-size: 16px;
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -1433,12 +1433,12 @@
 }
 
 .schedule_wrap_card_contents_images .face_img1 {
-  padding-top: 32px;
+  padding: 32px 3px 0;
 }
 
 .schedule_wrap_card_contents_images .face_img2 {
   max-height: 80%;
-  padding: 23px 0 0;
+  padding: 23px 3px 0;
 }
 
 .schedule_wrap_card_date p {
@@ -1453,7 +1453,7 @@
 }
 
 .schedule_wrap_card_contents_detail {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -1537,8 +1537,6 @@
 }
 
 .schedule_wrap_card_date .schedule_img {
-  position: absolute;
-  left: -7px;
   top: 7px;
 }
 
@@ -1562,7 +1560,7 @@
 
 .schedule_wrap_card_contents_detail {
   margin: 0;
-  padding: 25px 30px 0;
+  padding: 25px 13px 0;
   display: flex;
   align-items: center;
   height: 25px;
@@ -1577,22 +1575,20 @@
 }
 
  .schedule_wrap_card_contents_detail.sp1 {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
   margin: 0;
-  padding: 30px 15px 10px;
+  padding: 30px 13px 10px;
   height: 60px;
-  width: 40%;
+  width: 50%;
   letter-spacing: 0.05rem;
   line-height: 1rem;
 }
 
 
 .schedule_wrap_card_contents_detail.sp2 {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
   margin: 0;
-  padding: 30px 10px 10px ;
+  padding: 30px 13px 10px ;
   display: flex;
   align-items: center;
   height: 60px;
@@ -1633,6 +1629,19 @@
   transform: translate(-50%,-50%);
 } 
 /*↑↑↑↑↑↑↑ タイムスケジュール ↑↑↑↑↑↑↑*/
+}
+
+
+@media screen and (max-width: 450px) {
+  /*↓↓↓↓↓↓ タイムスケジュール ↓↓↓↓↓↓*/
+ .schedule_wrap_card_contents_detail.sp1 {
+   width: 40%;
+ }
+
+ .schedule_wrap_card_contents_detail.sp2 {
+  width: 45%;
+ }
+ /*↑↑↑↑↑↑↑ タイムスケジュール ↑↑↑↑↑↑↑*/
 }
 
 
@@ -2178,8 +2187,14 @@
 @media screen and (max-width: 380px){
 /*↓↓↓↓↓↓ タイムスケジュール ↓↓↓↓↓↓*/
 .schedule_wrap_card_contents_detail {
-  font-size: 12px;
+  font-size: 14px;
   width: 55%;
+}
+
+.schedule_wrap_card_contents_images img {
+  top: -5px;
+  max-width: 20%;
+  max-height: 80%;
 }
 
 .schedule_wrap_card_contents_images .face_img1 {
@@ -2187,9 +2202,15 @@
   padding-top: 36px;
 }
 
+.schedule_wrap_card_contents_images .face_img2 {
+  max-width: 40%;
+  max-height: 70%;
+  padding-top: 25px;
+}
+
 .schedule_wrap_card_contents_detail.sp1, 
 .schedule_wrap_card_contents_detail.sp2 {
-  font-size: 12px;
+  font-size: 14px;
   width: 45%;
   letter-spacing: 0.05rem;
 }
