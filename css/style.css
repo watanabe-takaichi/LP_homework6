@@ -566,7 +566,7 @@
   border: 1px solid #FFF;
   color: #FFF;
   cursor: pointer;
-  padding: 4px 14px;
+  padding: 3px 16px;
   font-style: italic;
 }
 
@@ -1118,32 +1118,11 @@
   font-size: 14px;
 }
 
-  /* タイムスケジュール */
-.schedule {
-  padding: 86px 0 50px;
-}
-
-.schedule_wrap {
-  margin-top: 42px;
-}
-
+  /*↓↓↓↓↓↓ タイムスケジュール ↓↓↓↓↓↓*/
 .schedule_wrap_card {
   margin-top: 16px;
   padding: 0 8px;
   height: auto;
-}
-
-.schedule_wrap_card_date {
-  background-color: rgba(241, 251, 255, 0.6);
-  border-radius: 5px;
-  padding: 20px;
-  position: relative;
-}
-
-.schedule_wrap_card_date .schedule_img {
-  position: absolute;
-  left: -4px;
-  top: 10px;
 }
 
 .schedule_wrap_card_date p {
@@ -1153,46 +1132,21 @@
   font-weight: 700;
 }
 
-.schedule_wrap_card_contents_images {
-  height: 130px;
-}
-
-.schedule_wrap_card_contents_images .face_img1 {
-  width:auto;
-  height:auto;
-  max-width:100%;
-  max-height:100%;
-  padding-top: 30px;
-}
-
-.schedule_wrap_card_contents_images .face_img2 {
-  width:auto;
-  height:auto;
-  max-width: 100%;
-  max-height: 85%;
-  padding: 23px 0;
-}
-
 .schedule_wrap_card_contents_detail {
   font-size: 1.2rem;
   margin-top: 10px;
   display: flex;
   align-items: center;
   height: 80px;
-}
+} 
+
+  /*↑↑↑↑↑↑↑ タイムスケジュール ↑↑↑↑↑↑↑*/
 
 .footer .limit {
   max-width: 960px;
   margin: 0 auto;
   padding: 0;
 }
-
-}
-
-@media screen and (max-width: 980px) {
-  .schedule_wrap_card {
-    width: 30%;
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1465,55 +1419,24 @@
 }
 
 
-/* タイムスケジュール */
-.schedule {
-  padding: 86px 0 50px;
-}
-
-.schedule_wrap {
-  margin-top: 42px;
-}
-
+  /*↓↓↓↓↓↓ タイムスケジュール ↓↓↓↓↓↓*/
 .schedule_wrap_card {
-  /* width: 42%; */
   margin-top: 16px;
-  padding: 0 20px;
+  padding: 0 10px;
+  width: 250px;
   height: auto;
-}
-
-.schedule_wrap_card_date {
-  background-color: rgba(241, 251, 255, 0.6);
-  border-radius: 5px;
-  padding: 20px;
-  position: relative;
-}
-
-.schedule_wrap_card_date .schedule_img {
-  position: absolute;
-  left: -4px;
-  top: 10px;
 }
 
 .schedule_wrap_card_contents_images img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
   max-height: 80%;
   padding-top: 23px;
 }
 
 .schedule_wrap_card_contents_images .face_img1 {
-  width:auto;
-  height:auto;
-  max-width:100%;
-  max-height:100%;
-  padding-top: 40px;
+  padding-top: 32px;
 }
 
 .schedule_wrap_card_contents_images .face_img2 {
-  width:auto;
-  height:auto;
-  max-width: 100%;
   max-height: 80%;
   padding: 23px 0 0;
 }
@@ -1529,16 +1452,15 @@
   height: 100px;
 }
 
-
 .schedule_wrap_card_contents_detail {
   font-size: 14px;
-  font-weight: 700;
   margin-top: 10px;
   display: flex;
   align-items: center;
   height: 80px;
-  text-align: left;
 }
+
+ /*↑↑↑↑↑↑↑ タイムスケジュール ↑↑↑↑↑↑↑*/
 
 .footer .limit {
   max-width: 768px;
@@ -1580,81 +1502,120 @@
     display: none;
   }
 
-    /* タイムスケジュール */
+/*↓↓↓↓↓↓ タイムスケジュール ↓↓↓↓↓↓*/
 .schedule {
-  padding: 86px 0 50px;
+  padding: 38px 0 20px;
+}
+
+.schedule .subtitle::before,
+.schedule .subtitle::after {
+  background-color: #fff; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 23px; /* 横線の長さ */
+}
+.schedule .subtitle::before {
+  margin-right: 10px; /* 文字との余白 */
+}
+.schedule .subtitle::after {
+  margin-left: 10px; /* 文字との余白 */
 }
 
 .schedule_wrap {
-  margin-top: 42px;
-  max-height: 480px;
-}
+  margin-top: 14px;
+  max-height: 410px;
+} 
 
 .schedule_wrap_card {
-  width: 100%;
-  margin-top: 16px;
-  padding: 0 26px;
+  margin: 17px 0 0;
+  padding: 0;
+  width: 90%;
 }
 
 .schedule_wrap_card_date {
-  padding: 15px 10px;
-  position: relative;
+  padding: 0;
 }
 
 .schedule_wrap_card_date .schedule_img {
   position: absolute;
-  left: -4px;
-  top: 10px;
+  left: -7px;
+  top: 7px;
 }
 
 .schedule_wrap_card_date p {
+  left: 2px;
+  top: 8px;
+}
+
+.schedule_wrap_card_contents_images img {
   position: absolute;
-  left: 5px;
-  top: 11px;
-  font-weight: 700;
+  top: -13px;
+  right: 10px;
+  max-width:100%;
+  max-height:85%;
 }
 
 .schedule_wrap_card_contents {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.schedule_wrap_card_contents_images {
-  height: 90px;
-}
-
-.schedule_wrap_card_contents_images img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  padding-top: 0;
-}
-
-.schedule_wrap_card_contents_images .face_img1 {
-  width:auto;
-  height:auto;
-  max-width:100%;
-  max-height:100%;
-  padding-top: 0;
-}
-
-.schedule_wrap_card_contents_images .face_img2 {
-  width:auto;
-  height:auto;
-  max-width: 100%;
-  max-height: 100%;
-  padding: 5px;
+  align-items: center;
 }
 
 .schedule_wrap_card_contents_detail {
-  font-size: 0.8rem;
-  margin-top: 10px;
+  margin: 0;
+  padding: 25px 30px 0;
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 25px;
+  width: 65%;
+  letter-spacing: 0.15rem;
+  line-height: 1.1rem;
+}
+
+.readMore {
+  display: block;
+  margin: 12px auto 50px;
+}
+
+ .schedule_wrap_card_contents_detail.sp1 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  padding: 30px 15px 10px;
+  height: 60px;
+  width: 40%;
+  letter-spacing: 0.05rem;
+  line-height: 1rem;
+}
+
+
+.schedule_wrap_card_contents_detail.sp2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  padding: 30px 10px 10px ;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 50%;
+  letter-spacing: 0.05rem;
+  line-height: 1rem;
+}
+
+.schedule_wrap_card_contents_images .face_img1,
+.schedule_wrap_card_contents_images .face_img {
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:70%;
+  padding-top: 25px;
+}
+
+.schedule_wrap_card_date .last_description {
+  position: absolute;
+  left: 23px;
+  top: 10px;
+  font-weight: 700;
+  width: 5%;
 }
 
 .schedule_wrap_card_contents_images.images_last {
@@ -1662,33 +1623,18 @@
 }
 
 .schedule_wrap_card_contents_images .face_img3 {
-  padding-top: 0px;
+  width:auto;
+  height:auto;
+  max-width: 90%;
+  max-height: 70%;
+  padding-top: 5px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+} 
+/*↑↑↑↑↑↑↑ タイムスケジュール ↑↑↑↑↑↑↑*/
 }
 
-.exhibitor_list_name {
-  font-size: 10px;
-}
-
-.readMore {
-  display: block;
-  margin: 15px auto;
-}
-
-/* .faq_list {
-  padding-bottom: 40px;
-} */
-
-.faq_list_box {
-  margin: 10px 50px;
-  font-size: 13px;
-}
-
-.footer .limit {
-  max-width: 573px;
-  margin: 0 auto;
-  padding: 0;
-}
-}
 
 @media screen and (max-width: 400px) {
 .main_kv {
@@ -1976,6 +1922,7 @@
   display: block;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100%;
 }
 
 .event_contents .title {
@@ -2060,7 +2007,7 @@
   background-repeat: no-repeat;
   width: 100%;
   padding: 33px 0;
-  margin-bottom: 37px;
+  margin-bottom: 56px;
 }
 
 .exhibitor_list {
@@ -2095,158 +2042,6 @@
 
 .exhibitor_detail {
   display: none;
-}
-
-/* タイムスケジュール */
-.schedule {
-  padding: 38px 0 25px;
-}
-
-.schedule_wrap {
-  margin-top: 14px;
-  max-height: 400px;
-}
-
-.schedule .subtitle::before,
-.schedule .subtitle::after {
-  background-color: #FFF;/* 横線の色 */
-  content: "";
-  height: 1px; /* 横線の高さ */
-  width: 18px; /* 横線の長さ */
-}
-
-.schedule_wrap_card {
-  width: 100%;
-  margin: 14px 0 0;
-  padding: 0 18px;
-  height: 30%;
-}
-
-.schedule_wrap_card_date {
-  background-color: rgba(241, 251, 255, 0.6);
-  border-radius: 5px;
-  padding: 0 20px;
-  position: relative;
-}
-
-.schedule_wrap_card_date .schedule_img {
-  position: absolute;
-  left: -4px;
-  top: 4px;
-  width:auto;
-  height:auto;
-  max-width:23%;
-  max-height:60%;
-}
-
-.schedule_wrap_card_date p {
-  position: absolute;
-  left: 5px;
-  top: 9px;
-  font-weight: 700;
-  font-size: 10px;
-  letter-spacing: 0.15rem;
-}
-
-.schedule_wrap_card_contents_images {
-  height: 100px;
-}
-
-.schedule_wrap_card_contents_images img {
-  position: absolute;
-  top: 5px;
-  right: 15px;
-  width:auto;
-  height:auto;
-  max-width:100%;
-  max-height:90%;
-}
-
-.schedule_wrap_card_contents_detail {
-  font-size: 14px;
-  font-weight: 700;
-  margin: 0;
-  padding: 35px 5px 0;
-  display: flex;
-  align-items: center;
-  height: 60px;
-  width: 65%;
-  letter-spacing: 0.25rem;
-  line-height: 1.1rem;
-}
-
-.contents_wrap {
-  width: 100%;
-}
-
-.readMore {
-  display: block;
-  margin: 15px auto;
-}
-
-.schedule_wrap_card_contents_detail.sp1 {
-  font-size: 14px;
-  font-weight: 700;
-  margin: 0;
-  padding: 30px 0 10px;
-  display: flex;
-  align-items: center;
-  height: 60px;
-  width: 45%;
-  letter-spacing: 0.25rem;
-  line-height: 1.1rem;
-}
-
-.schedule_wrap_card_contents_detail.sp2 {
-  font-size: 14px;
-  font-weight: 700;
-  margin: 0;
-  padding: 30px 0 10px;
-  display: flex;
-  align-items: center;
-  height: 60px;
-  width: 55%;
-  letter-spacing: 0.25rem;
-  line-height: 1.1rem;
-}
-
-.schedule_wrap_card_contents_images .face_img1 {
-  width:auto;
-  height:auto;
-  max-width:50%;
-  max-height:100%;
-  padding: 10px 0;
-}
-
-.schedule_wrap_card_contents_images .face_img2 {
-  width:auto;
-  height:auto;
-  max-width: 42%;
-  max-height: 100%;
-  padding: 10px 0;
-}
-
-.schedule_wrap_card_date .last_description {
-  position: absolute;
-  left: 23px;
-  top: 10px;
-  font-weight: 700;
-  width: 5%;
-}
-
-.schedule_wrap_card_contents_images.images_last {
-  height: 100px;
-}
-
-.schedule_wrap_card_contents_images .face_img3 {
-  width:auto;
-  height:auto;
-  max-width: 90%;
-  max-height: 70%;
-  padding-top: 5px;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
 }
 
 /* よくある質問 */
@@ -2329,9 +2124,6 @@
 .faq_list_boq_answer_bottom a {
   color: black;
 }
-/* .faq_list_box.sp {
-  display: none;
-} */
 
 /* フッター */
 .footer {
@@ -2383,6 +2175,36 @@
 
 }
 
+@media screen and (max-width: 380px){
+/*↓↓↓↓↓↓ タイムスケジュール ↓↓↓↓↓↓*/
+.schedule_wrap_card_contents_detail {
+  font-size: 12px;
+  width: 55%;
+}
+
+.schedule_wrap_card_contents_images .face_img1 {
+  max-width: 45%;
+  padding-top: 36px;
+}
+
+.schedule_wrap_card_contents_detail.sp1, 
+.schedule_wrap_card_contents_detail.sp2 {
+  font-size: 12px;
+  width: 45%;
+  letter-spacing: 0.05rem;
+}
+
+.schedule_wrap_card_date .last_description {
+  position: absolute;
+  left: 21px;
+  top: 9px;
+  font-weight: 700;
+  width: 5%;
+}
+ /*↑↑↑↑↑↑↑ タイムスケジュール ↑↑↑↑↑↑↑*/
+
+}
+
 @media screen and (max-width: 370px){
 
 .summit_detail {
@@ -2411,14 +2233,4 @@
   padding: 7px 0;
   letter-spacing: 0.03rem;
 }
-}
-
-@media screen and (max-width: 370px) {
-  .schedule_wrap_card_date .last_description {
-    position: absolute;
-    left: 21px;
-    top: 9px;
-    font-weight: 700;
-    width: 5%;
-  }
 }
