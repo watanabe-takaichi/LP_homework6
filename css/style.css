@@ -56,10 +56,10 @@
   font-weight: 700;
   font-style: italic;
   margin: 0 auto;
-  margin-top: 9px;
+  margin-top: 14px;
   font-size: 2.4rem;
   padding: 0px 20px;
-  letter-spacing: -0.06em;
+  letter-spacing: 0.03em;
 }
 
 .kv_date span {
@@ -205,8 +205,9 @@
 }
 
 .summary_table_column_pc {
-  font-size: 21px;
+  font-size: 22px;
   padding: 18px 3px;
+  letter-spacing: 0.01rem;
 }
 
 .summary_table_column span {
@@ -229,6 +230,10 @@
   font-size: 22px;
 }
 
+.summary_table_column_pc column2 {
+  letter-spacing: 0.01rem;
+}
+
 .summary_table_column.column3 {
   padding: 12px 0px;
   font-size: 22px;
@@ -247,16 +252,21 @@
 .summary_table .table_column4 {
   padding: 45px 7px;
   font-size: 22px;
-  letter-spacing: -0.05rem;
+  letter-spacing: 0.03rem;
 }
 
 .summary_table_column.column5 {
   padding: 18px 0px;
   font-size: 22px;
+  border: none;
 }
 
 .summary_table_access {
   display: flex;
+}
+
+.summary_table .summary_table_access {
+  border: none;
 }
 
 .summary_table_access .station {
@@ -667,8 +677,9 @@
 .schedule_wrap_card_date p {
   position: absolute;
   left: 5px;
-  top: 11px;
+  top: 12px;
   font-weight: 700;
+  letter-spacing: 0.1rem;
 }
 
 .schedule_wrap_card_date .last_description {
@@ -1457,6 +1468,12 @@
   line-height: 1.2rem;
 }
 
+.event_contents .title {
+  font-size: 36px;
+  letter-spacing: 0.05rem;
+  line-height: 4.0rem;
+}
+
 .event_img {
   width: 260px;
   margin-bottom: 10px;
@@ -1563,6 +1580,11 @@
   .pickup {
     display: none;
   }
+
+  .contents_box_title {
+    padding: 9px 5px;
+    letter-spacing: -0.05rem;
+}
 
 /*↓↓↓↓↓↓ タイムスケジュール ↓↓↓↓↓↓*/
 .schedule {
@@ -1711,7 +1733,7 @@
 .main_kv {
   background-image: url(../img/background_sp.png);
   max-width: 400px;
-  height: 466px;
+  height: 463px;
   padding: 0;
 }
 
@@ -1747,9 +1769,9 @@
 .kv_date {
   margin: 0 auto;
   margin-top: 12px;
-  font-size: 1.2rem;
+  font-size: 25px;
   padding: 0px 20px;
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.08rem;
 }
 
 .kv_date span {
@@ -1777,7 +1799,7 @@
 
 .summit {
   text-align: center;
-  padding: 25px 0 28px;
+  padding: 25px 0;
 }
 
 .limit {
@@ -1814,6 +1836,24 @@
   margin-left: 20px; /* 文字との余白 */
 }
 
+.summit .subtitle::before,
+.summit .subtitle::after {
+  background-color: #444545; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 18px; /* 横線の長さ */
+}
+.summit .subtitle::before {
+  margin-right: 10px; /* 文字との余白 */
+}
+.summit .subtitle::after {
+  margin-left: 10px; /* 文字との余白 */
+}
+
+.summit .subtitle {
+  margin-top: 8px;
+}
+
 .summit_text {
   display: none;
 }
@@ -1836,6 +1876,26 @@
   margin: 0 auto;
   padding: 0;
 }
+
+.summary .subtitle {
+  margin-top: 10px;
+  letter-spacing: 0.01rem;
+}
+
+.summary .subtitle::before,
+.summary .subtitle::after {
+  background-color: #444545; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 20px; /* 横線の長さ */
+}
+.summary .subtitle::before {
+  margin-right: 10px; /* 文字との余白 */
+}
+.summary .subtitle::after {
+  margin-left: 10px; /* 文字との余白 */
+}
+
 .summary_detail {
   margin-top: 7px;
 }
@@ -1859,7 +1919,7 @@
   font-size: 12px;
   padding: 0;
   margin: 0;
-  letter-spacing: 0.035rem;
+  letter-spacing: 0.08rem;
   line-height: 1.9rem;
 }
 
@@ -1942,8 +2002,8 @@
   font-size: 13px;
   font-weight: 500;
   margin: 0;
-  letter-spacing: 0.01rem;
-  line-height: 1.15rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.2rem;
 }
 
 .summary_table_access .station ul li {
@@ -1969,8 +2029,15 @@
 
 /* イベント内容 */
 .event_contents {
-  padding: 36px 0 35px;
+  padding: 20px 0;
   margin-top: 965px;
+}
+
+.event_contents .title {
+  font-size: 26px;
+  letter-spacing: -0.1rem;
+  line-height: 4.0rem;
+  padding-bottom: 10px;
 }
 
 .event_contents .subtitle::before,
@@ -1987,6 +2054,10 @@
   margin-left: 30px; /* 文字との余白 */
 }
 
+.event_contents .subtitle {
+  margin-top: -17px;
+}
+
 .contents_wrap {
   display: block;
   justify-content: space-between;
@@ -1996,7 +2067,7 @@
 
 .contents_box {
   width: 100%;
-  margin: 20px 0;
+  margin: 20px 0 30px;
 }
 
 .contents_box_title {
@@ -2030,15 +2101,12 @@
 }
 
 .contents_box_text {
-  color: #FDD35C;
   font-size: 20px;
-  font-weight: 700;
+  letter-spacing: 0.08rem;
 }
 
 .contents_box_text span {
-  color: #FDD35C;
   font-size: 30px;
-  font-style: italic;
   margin-right: 5px;
   line-height: 1rem;
 }
@@ -2071,8 +2139,8 @@
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 33px 0;
-  margin-bottom: 56px;
+  padding: 41px 0;
+  margin-bottom: 34px;
 }
 
 .exhibitor_list {
@@ -2097,6 +2165,10 @@
 }
 .exhibitor .subtitle::after {
   margin-left: 10px; /* 文字との余白 */
+}
+
+.schedule_wrap_card_date p {
+  letter-spacing: 0.01rem;
 }
 
 .exhibitor_list_name {
