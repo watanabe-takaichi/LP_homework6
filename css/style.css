@@ -18,7 +18,7 @@
 
  .main_kv {
   background-image: url(../img/main.png);
-  width: 100%;
+  /* width: 100%; */
   height: 812px;
   background-position: center;
   background-size: cover;
@@ -73,7 +73,7 @@
 }
 
 .kv_apply {
-  margin-top: 38px;
+  margin-top: 48px;
 }
 
 
@@ -82,11 +82,10 @@
 .contents {
   background-image: url(../img/contents.svg);
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 33px;
   background-position: right 20% top -25%;
   background-size: 100%; 
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
 }
 
 .summit {
@@ -105,6 +104,7 @@
   font-weight: 700;
   color: #81D7FC;
   font-size: 50px;
+  letter-spacing: 0.1rem;
 }
 
 .subtitle {
@@ -157,6 +157,26 @@
   margin: 0 auto;
   padding: 0 10px;
 }
+
+.summary .subtitle {
+  margin-top: 12px;
+  letter-spacing: 0.1rem;
+}
+
+.summary .subtitle::before,
+.summary .subtitle::after {
+  background-color: #444545; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 35px; /* 横線の長さ */
+}
+.summary .subtitle::before {
+  margin-right: 25px; /* 文字との余白 */
+}
+.summary .subtitle::after {
+  margin-left: 25px; /* 文字との余白 */
+}
+
 .summary_detail {
   margin-top: 25px;
 }
@@ -249,6 +269,7 @@
   font-weight: 500;
   margin: 7px 0 7px 13px;
   letter-spacing: 0.04rem;
+  line-height: 1.28rem;
 }
 
 .summary_table_access .station ul li {
@@ -278,7 +299,7 @@
 .event_contents {
   text-align: center;
   background-color: #FFF6DE;
-  padding: 75px 0;
+  padding: 72px 0;
 }
 
 .contents_wrap {
@@ -288,7 +309,31 @@
 }
 
 .event_contents .title {
+  font-style: italic;
+  font-weight: 700;
   color: #FDD35C;
+  font-size: 50px;
+  letter-spacing: 0.05rem;
+  line-height: 4.0rem;
+  padding-bottom: 10px;
+}
+
+.event_contents .subtitle {
+  margin-top: 7px;
+}
+
+.event_contents .subtitle::before,
+.event_contents .subtitle::after {
+  background-color: #444545; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 35px; /* 横線の長さ */
+}
+.event_contents .subtitle::before {
+  margin-right: 15px; /* 文字との余白 */
+}
+.event_contents .subtitle::after {
+  margin-left: 25px; /* 文字との余白 */
 }
 
 .contents_box {
@@ -356,7 +401,7 @@
 
 /* ピックアップ */
 .pickup {
-  padding: 35px 0;
+  padding: 38px 0 22px;
   text-align: center;
   border-left: 50px solid #FDD35C;
   border-right: 50px solid #FDD35C;
@@ -402,18 +447,20 @@
   padding-top: 3px;
   font-size: 14px;
   letter-spacing: 0.1rem;
+  line-height: 1.4rem;
 }
 
 .pickup_list_image.image2 {
-  padding: 23px 0;
+  padding: 24px 0;
   width: 288px;
 }
 
 .pickup_list_detail.image2 {
   padding-left: 27px;
-  padding-top: 8px;
+  padding-top: 2px;
   font-size: 14px;
-  letter-spacing: 0.07rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
 }
 
 .pickup_list_box.image3 {
@@ -422,13 +469,13 @@
 }
 
 .pickup_list_image.image3 {
-  padding: 17px 0 0;
+  padding: 14px 0 0;
   width: 288px;
 }
 
 .pickup_list_detail.image3 {
   padding-left: 14px;
-  padding-top: 20px;
+  padding-top: 17px;
   font-size: 14px;
   letter-spacing: 0.12rem;
 }
@@ -448,11 +495,12 @@
   padding-top: 6px;
   font-size: 14px;
   letter-spacing: 0.1rem;
+  line-height: 1.3rem;
 }
 
 .pickup_list_detail.image4 span {
   font-size: 13px;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.08rem;
 }
 
 .pickup_list_box.image5 {
@@ -461,15 +509,15 @@
 }
 
 .pickup_list_image.image5 {
-  padding: 15px 0px;
+  padding: 20px 0px;
   width: 288px;
 }
 
 .pickup_list_detail.image5 {
   padding-left: 23px;
-  padding-top: 11px;
+  padding-top: 16px;
   font-size: 14px;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.08rem;
 }
 
 /* 出展企業一覧 */
@@ -480,7 +528,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 5px 0 70px;
+  padding: 22px 0 70px;
 }
 
 .exhibitor_list {
@@ -491,6 +539,10 @@
   line-height: 2.1;
   text-align: left;
   width: 905px;
+}
+
+.exhibitor .title {
+  letter-spacing: 0.1rem;
 }
 
 .exhibitor .subtitle::before,
@@ -525,12 +577,13 @@
   background-image: url(../img/background_4.png);
   background-size: cover;
   text-align: center;
-  padding: 85px 0 173px;
+  padding: 90px 0 164px;
   position: relative;
 }
 
 .schedule .title {
   color: #00A8F0;
+  letter-spacing: 0.1rem;
 }
 
 .schedule .limit {
@@ -686,7 +739,7 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 92px 0 99px 0;
+  padding: 95px 0 99px 0;
 }
 
 .faq .title {
@@ -965,7 +1018,7 @@
   }
 
   .summary_table_access .station ul {
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 500;
     margin: 7px 0 7px 13px;
     letter-spacing: 0.04rem;
@@ -1314,7 +1367,7 @@
   
   .summary_table_column span {
     padding: 2px 0;
-    font-size: 14px;
+    font-size: 13px;
     margin: 0;
     width: 100px;
   }
@@ -1734,7 +1787,6 @@
 }
 
 .title {
-  font-size: 22px;
   margin: 0 auto;
 }
 
@@ -1796,7 +1848,6 @@
 }
 
 .summary_table td {
-  font-size: 21px;
   font-weight: 700;
   border-bottom: 1px dotted #C4C4C4;
   padding: 7px 0;
@@ -1826,7 +1877,7 @@
 
 .summary_table_column span {
   padding: 0 7px;
-  font-size: 0.9rem;
+  font-size: 12px;
   margin: 5px 0;
   width: 70%;
 }
@@ -1941,10 +1992,6 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-}
-
-.event_contents .title {
-  color: #FDD35C;
 }
 
 .contents_box {
