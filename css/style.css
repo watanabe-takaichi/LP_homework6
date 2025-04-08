@@ -1,10 +1,12 @@
- * {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+Javanese:wght@400..700&family=Orelega+One&display=swap');
+
+* {
   margin: 0;
   padding: 0;
  }
 
  body {
-  font-family: Noto Sans JP;
+  font-family: 'Noto Sans JP', sans-serif;
  }
 
  a {
@@ -1203,10 +1205,8 @@
   }
 
   .schedule_wrap_card_date p {
-    position: absolute;
     left: 5px;
     top: 11px;
-    font-weight: 700;
   }
 
   .schedule_wrap_card_contents_detail {
@@ -1522,10 +1522,8 @@
 }
 
 .schedule_wrap_card_date p {
-  position: absolute;
   left: 5px;
   top: 11px;
-  font-weight: 700;
 }
 
 .schedule_wrap_card_contents_images {
@@ -1611,7 +1609,7 @@
 } 
 
 .schedule_wrap_card {
-  margin: 17px 0 0;
+  margin: 14px 0 0;
   padding: 0;
   width: 90%;
 }
@@ -1655,7 +1653,7 @@
 
 .readMore {
   display: block;
-  margin: 12px auto 50px;
+  margin: 18px auto 50px;
 }
 
  .schedule_wrap_card_contents_detail.sp1 {
@@ -1860,11 +1858,11 @@
 
 .summit_detail {
   margin-top: 18px;
-  font-size: 15px;
-  line-height: 2.36rem;
+  font-size: 16px;
+  line-height: 2.33rem;
   padding: 0;
-  margin: 20px 50px 0;
-  letter-spacing: 0.05rem;
+  margin: 22px 50px 0;
+  letter-spacing: -0.01rem;
 }
 
 .summary {
@@ -1916,11 +1914,11 @@
 
 .summary_table_column_sp {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   padding: 0;
   margin: 0;
-  letter-spacing: 0.08rem;
-  line-height: 1.9rem;
+  letter-spacing: -0.01rem;
+  line-height: 2rem;
 }
 
 .summary_table_column {
@@ -1949,8 +1947,8 @@
 .table_column2 .summary_table_column_sp {
   padding: 5px 0;
   margin-left: 0;
-  font-size: 13px;
-  letter-spacing: 0.03rem;
+  font-size: 14px;
+  letter-spacing: -0.01rem;
 }
 
 .column2 {
@@ -1965,25 +1963,25 @@
 
 .summary_table .table_column3 {
   padding: 5px 0;
-  font-size: 13px;
-  letter-spacing: 0.05rem;
+  font-size: 14px;
+  letter-spacing: -0.01rem;
 }
 
 .summary_table_column.column4 {
   padding: 6px 2px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .summary_table .table_column4 {
   padding: 13px 0 3px;
-  font-size: 13px;
-  letter-spacing: 0.03rem;
+  font-size: 14px;
+  letter-spacing: -0.01rem;
   line-height: 1.8rem;
 }
 
 .summary_table_column.column5 {
   padding: 6px 3px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .summary_table_access {
@@ -1993,16 +1991,16 @@
 
 .summary_table_access .station {
   width: 100%;
-  margin: 5px 0;
+  margin: 2px 0;
   font-size: 14px;
   text-align: left;
 }
 
 .summary_table_access .station ul {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   margin: 0;
-  letter-spacing: 0.05rem;
+  letter-spacing: -0.01rem;
   line-height: 1.2rem;
 }
 
@@ -2169,6 +2167,8 @@
 
 .schedule_wrap_card_date p {
   letter-spacing: 0.01rem;
+  font-size: 14px;
+  top: 10px;
 }
 
 .exhibitor_list_name {
